@@ -30,7 +30,7 @@ def coletar_dados():
     driver.get(link)
     driver.maximize_window()
     sleep(1.5)
-    #clicar no CEASA escolhido
+    #clicar no item escolhido
     valor = driver.find_element(By.XPATH,'//*[@id="price"]/div/div[1]/div[1]/span/span/span[2]')
     valorbaixo= valor.text
     sleep(2)
